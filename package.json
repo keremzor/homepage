@@ -2,6 +2,25 @@
   "name": "homepage",
   "version": "0.1.0",
   "private": true,
+  "description": "my personal website.",
+  "author": {
+    "name": "Kerem Zor",
+    "email": "work@keremzor.com",
+    "url": "https://keremzor.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keremzor/homepage.git"
+  },
+  "homepage": "https://github.com/keremzor/homepage#readme",
+  "keywords": [
+    "react",
+    "website",
+    "typescript",
+    "nextjs",
+    "scss"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
