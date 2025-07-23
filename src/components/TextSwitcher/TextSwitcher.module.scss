@@ -6,7 +6,7 @@
     rgba(0, 0, 0, 0.6) 70%
   );
   -webkit-mask-size: 200%;
-  animation: shine 2s infinite;
+  animation: shine 2s infinite 0.3s;
 }
 
 @keyframes shine {
