@@ -22,7 +22,5 @@ export function TextSwitcher({ config }: { config: TextSwitcherConfig }) {
     return () => clearTimeout(delay);
   }, [config.interval, config.texts.length]);
 
-  return (
-    <h1 className={`${styles.switcher} ff-700 fs-32 text-white`}>{config.texts[index]}</h1>
-  );
+  return <h1 className={`${styles.switcher} ff-700 fs-32 text-white`}>{config.texts[index]}</h1>;
 }
