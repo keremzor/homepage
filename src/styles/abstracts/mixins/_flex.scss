@@ -1,0 +1,91 @@
+@use '@/styles/abstracts/functions/px-to-rem' as *;
+@use 'sass:math';
+
+@mixin flexbox(
+  $display: flex,
+  $direction: null,
+  $justify: null,
+  $align: null,
+  $wrap: null,
+  $gap: null,
+  $flex: null,
+  $grow: null,
+  $shrink: null,
+  $basis: null,
+  $align-content: null,
+  $align-self: null
+) {
+  display: $display;
+
+  @if $direction {
+    flex-direction: $direction;
+  }
+
+  @if $justify {
+    justify-content: $justify;
+  }
+
+  @if $align {
+    align-items: $align;
+  }
+
+  @if $wrap {
+    flex-wrap: $wrap;
+  }
+
+  @if $gap {
+    gap: to-rem($gap);
+  }
+
+  @if $flex {
+    flex: $flex;
+  }
+
+  @if $grow {
+    flex-grow: $grow;
+  }
+
+  @if $shrink {
+    flex-shrink: $shrink;
+  }
+
+  @if $basis {
+    flex-basis: if($basis == auto, auto, #{$basis}#{if($basis != 0, '%', '')});
+  }
+
+  @if $align-content {
+    align-content: $align-content;
+  }
+
+  @if $align-self {
+    align-self: $align-self;
+  }
+}
+
+@mixin flex-grow($val: 1) {
+  flex-grow: $val;
+}
+
+@mixin flex-shrink($val: 1) {
+  flex-shrink: $val;
+}
+
+@mixin flex-basis($val) {
+  flex-basis: if($val == auto, auto, #{$val}#{if($val != 0, '%', '')});
+}
+
+@mixin justify($val) {
+  justify-content: $val;
+}
+
+@mixin align($val) {
+  align-items: $val;
+}
+
+@mixin self-align($val) {
+  align-self: $val;
+}
+
+@mixin content-align($val) {
+  align-content: $val;
+}

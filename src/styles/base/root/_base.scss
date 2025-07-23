@@ -1,0 +1,25 @@
+@use '@/styles/abstracts/functions/px-to-rem' as *;
+@use '@/styles/abstracts/variables/theme-colors' as *;
+@use '@/styles/abstracts/utilities/fonts' as *;
+@use '@/styles/abstracts/utilities/liquid-font-size' as *;
+@use '@/styles/abstracts/mixins/flex' as *;
+@use '@/styles/abstracts/mixins/breakpoints' as *;
+
+html {
+  font-size: 16px;
+}
+
+body {
+  @include font-style('400');
+  @include fs(16);
+
+  line-height: 1.5;
+
+  @include bg('surface');
+
+  @include flexbox($justify: center, $align: center, $direction: column);
+
+  width: 100%;
+  min-height: 100dvh;
+  padding: to-rem(48) 0;
+}

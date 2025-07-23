@@ -1,0 +1,18 @@
+@use 'sass:map' as map;
+@use '@/styles/config/theme-colors.config' as config;
+@use '@/styles/abstracts/variables/theme-colors' as *;
+
+:root {
+  @each $name, $value in config.$color-config {
+    --color-#{$name}: #{theme-value($name)};
+  }
+}
+
+@each $name, $value in config.$color-config {
+  .text-#{$name} {
+    @include text($name);
+  }
+  .bg-#{$name} {
+    @include bg($name);
+  }
+}

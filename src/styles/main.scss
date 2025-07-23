@@ -1,0 +1,5 @@
+@use 'abstracts/general' as *;
+@use 'base/general' as *;
+nextjs-portal {
+  display: none !important;
+}

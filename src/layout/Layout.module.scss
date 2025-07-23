@@ -1,0 +1,25 @@
+@use '@/styles/abstracts/functions/px-to-rem' as *;
+@use '@/styles/abstracts/mixins/flex' as *;
+
+.layout {
+  max-width: to-rem(500);
+  width: 100%;
+  padding-left: to-rem(16);
+  padding-right: to-rem(16);
+  text-align: center;
+  @include flexbox($direction: column, $gap: 16, $align: center);
+  opacity: 0;
+  animation: slide-in-up 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s forwards;
+}
+
+@keyframes slide-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(15%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

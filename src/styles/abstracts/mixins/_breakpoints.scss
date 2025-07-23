@@ -1,0 +1,22 @@
+@use 'sass:map';
+@use '@/styles/abstracts/functions/px-to-rem' as *;
+
+$breakpoints: (
+  sm: to-rem(576),
+  md: to-rem(768),
+  lg: to-rem(992),
+  xl: to-rem(1200),
+  xxl: to-rem(1400),
+);
+
+@mixin media($breakpoint) {
+  $value: map.get($breakpoints, $breakpoint);
+
+  @if $value {
+    @media (min-width: $value) {
+      @content;
+    }
+  } @else {
+    @warn "Invalid breakpoint: `#{$breakpoint}`. Valid values: #{map.keys(config.$breakpoints)}";
+  }
+}

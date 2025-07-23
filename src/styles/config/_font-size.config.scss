@@ -1,0 +1,5 @@
+@use '@/styles/abstracts/functions/px-to-rem' as *;
+
+$font-size-utilities: ((14, 16), 26, 32);
+
+$default-preferred-value: '-0.8217rem + 5.0955vw';

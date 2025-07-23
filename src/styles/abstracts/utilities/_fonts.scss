@@ -1,0 +1,32 @@
+@use 'sass:map';
+@use '@/styles/config/font-family.config' as config;
+
+// System font fallbacks for better performance and compatibility. If the main font cannot be found, these will be used.
+$system-font-fallbacks:
+  -apple-system,
+  blinkmacsystemfont,
+  segoe ui,
+  roboto,
+  oxygen,
+  ubuntu,
+  cantarell,
+  fira sans,
+  droid sans,
+  helvetica neue,
+  sans-serif;
+
+@mixin font-style($weightKey, $italic: false) {
+  font-family: map.get(config.$font-face, $weightKey), $system-font-fallbacks;
+  font-weight: map.get(config.$font-utility-class, $weightKey);
+  font-style: if($italic, italic, normal);
+}
+
+@each $weightKey, $weightVal in config.$font-utility-class {
+  .ff-#{$weightKey} {
+    @include font-style($weightKey);
+  }
+
+  .ff-#{$weightKey}.ff-italic {
+    @include font-style($weightKey, true);
+  }
+}

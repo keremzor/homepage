@@ -1,0 +1,12 @@
+@use '@/styles/abstracts/functions/px-to-rem' as *;
+@use '@/styles/abstracts/mixins/flex' as *;
+.links {
+  @include flexbox($direction: row, $gap: 24, $align: center);
+  li {
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

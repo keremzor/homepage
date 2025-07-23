@@ -1,0 +1,33 @@
+@use 'sass:list';
+@use '@/styles/abstracts/functions/px-to-rem' as *;
+@use '@/styles/config/font-size.config' as config;
+
+@mixin fs($min, $max: null, $preferred: null) {
+  $min-rem: to-rem($min);
+
+  @if $max {
+    $max-rem: to-rem($max);
+    $preferred-value: if($preferred, $preferred, config.$default-preferred-value);
+
+    font-size: clamp(#{$min-rem}, #{$preferred-value}, #{$max-rem});
+  } @else {
+    font-size: $min-rem;
+  }
+}
+
+@each $size in config.$font-size-utilities {
+  @if list.length($size) == 1 {
+    $val: list.nth($size, 1);
+
+    .fs-#{$val} {
+      @include fs($val);
+    }
+  } @else {
+    $min: list.nth($size, 1);
+    $max: list.nth($size, 2);
+
+    .fs-#{$min}-#{$max} {
+      @include fs($min, $max);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@use 'sass:map' as map;
+@use 'sass:string';
+@use '@/styles/abstracts/functions/px-to-rem' as *;
+@use '@/styles/config/theme-colors.config' as config;
+
+@function get-color($name) {
+  @return string.unquote('var(--color-#{$name})');
+}
+
+@mixin text($colorName) {
+  color: get-color($colorName);
+}
+
+@mixin bg($colorName) {
+  background-color: get-color($colorName);
+}
+
+@function theme-value($name) {
+  @return map.get(config.$color-config, $name);
+}
