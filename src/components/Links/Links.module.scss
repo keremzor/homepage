@@ -1,12 +1,29 @@
 @use '@/styles/abstracts/functions/px-to-rem' as *;
 @use '@/styles/abstracts/mixins/flex' as *;
+$space: 12;
 .links {
-  @include flexbox($direction: row, $gap: 24, $align: center);
+  @include flexbox($direction: row, $gap: $space, $align: center);
+
+  &:has(a:hover) a {
+    opacity: 0.5;
+  }
+
+  a {
+    transition: opacity 0.2s;
+  }
+
+  &:has(a:hover) a:hover {
+    opacity: 1;
+  }
+
   li {
-    a {
-      &:hover {
-        text-decoration: underline;
-      }
+    &::after {
+      content: '\002F';
+      padding-left: to-rem($space);
+    }
+    &:last-child::after {
+      content: '';
+      all: revert;
     }
   }
 }
