@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Kerem Zor - Frontend Developer</title>
+        <title>Kerem Zor</title>
         <meta
           name="description"
           content="I specialize in UI development, web applications, design systems, and animations for corporate projects and products."
@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="author" content="Kerem Zor" />
         <meta name="robots" content="index, follow" />
 
-        <meta property="og:title" content="Kerem Zor - Frontend Developer" />
+        <meta property="og:title" content="Kerem Zor" />
         <meta
           property="og:description"
           content="I specialize in UI development, web applications, design systems, and animations for corporate projects and products."
@@ -25,7 +25,7 @@ export default function Home() {
         <meta property="og:image" content="https://keremzor.com/og-img.jpg" />
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kerem Zor - Frontend Developer" />
+        <meta name="twitter:title" content="Kerem Zor" />
         <meta
           name="twitter:description"
           content="I specialize in UI development, web applications, design systems, and animations for corporate projects and products."
