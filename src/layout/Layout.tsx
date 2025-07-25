@@ -13,10 +13,10 @@ const TextSwitcherConfig: TextSwitcherConfig = {
 
 export function Layout() {
   return (
-    <div className={styles.layout}>
+    <main className={styles.layout} role="main">
       <Title text={appConfig.name} />
       <TextSwitcher config={TextSwitcherConfig} />
       <Links />
-    </div>
+    </main>
   );
 }

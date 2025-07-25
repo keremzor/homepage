@@ -2,28 +2,30 @@
 @use '@/styles/abstracts/mixins/flex' as *;
 $space: 12;
 .links {
-  @include flexbox($direction: row, $gap: $space, $align: center);
+  ul {
+    @include flexbox($direction: row, $gap: $space, $align: center);
 
-  &:has(a:hover) a {
-    opacity: 0.5;
-  }
-
-  a {
-    transition: opacity 0.2s;
-  }
-
-  &:has(a:hover) a:hover {
-    opacity: 1;
-  }
-
-  li {
-    &::after {
-      content: '\002F';
-      padding-left: to-rem($space);
+    &:has(a:hover) a {
+      opacity: 0.5;
     }
-    &:last-child::after {
-      content: '';
-      all: revert;
+
+    a {
+      transition: opacity 0.2s;
+    }
+
+    &:has(a:hover) a:hover {
+      opacity: 1;
+    }
+
+    li {
+      &::after {
+        content: '\002F';
+        padding-left: to-rem($space);
+      }
+      &:last-child::after {
+        content: '';
+        all: revert;
+      }
     }
   }
 }
