@@ -1,26 +1,39 @@
 import styles from './TextSwitcher.module.scss';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export interface TextSwitcherConfig {
   interval: number;
   texts: string[];
 }
 
-export function TextSwitcher({ config }: { config: TextSwitcherConfig }) {
+function useTextSwitcher(texts: string[], interval: number, initialDelay = 1000) {
   const [index, setIndex] = useState(0);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const delayRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    let timer: NodeJS.Timeout;
-    const delay = setTimeout(() => {
-      timer = setInterval(() => {
-        setIndex((prev) => (prev + 1) % config.texts.length);
-      }, config.interval);
-    }, 1000);
-    return () => {
-      clearTimeout(delay);
-      clearInterval(timer);
-    };
-  }, [config.interval, config.texts.length]);
+    setIndex(0);
+    delayRef.current = setTimeout(() => {
+      timerRef.current = setInterval(() => {
+        setIndex((prev) => (prev + 1) % texts.length);
+      }, interval);
+    }, initialDelay);
 
-  return <h1 className={`${styles.switcher} ff-700 fs-32 text-white`}>{config.texts[index]}</h1>;
+    return () => {
+      if (delayRef.current) clearTimeout(delayRef.current);
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [texts, interval, initialDelay]);
+
+  return texts.length > 0 ? texts[index] : '';
+}
+
+export function TextSwitcher({ config }: { config: TextSwitcherConfig }) {
+  const currentText = useTextSwitcher(config.texts, config.interval);
+
+  return (
+    <h1 className={`${styles.switcher} ff-700 fs-32 text-white`}>
+      {currentText}
+    </h1>
+  );
 }
