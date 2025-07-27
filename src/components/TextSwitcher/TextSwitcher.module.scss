@@ -1,20 +1,31 @@
+$shine-gradient:
+  -75deg,
+  rgba(0, 0, 0, 0.6) 30%,
+  #000 50%,
+  rgba(0, 0, 0, 0.6) 70%;
+
+$shine-mask-size: 200%;
+$shine-from: 150%;
+$shine-to: -50%;
+$shine-duration: 2s;
+$shine-delay: 0.7s;
+
 .switcher {
-  -webkit-mask-image: linear-gradient(
-    -75deg,
-    rgba(0, 0, 0, 0.6) 30%,
-    #000 50%,
-    rgba(0, 0, 0, 0.6) 70%
-  );
-  -webkit-mask-size: 200%;
-  animation: shine 2s infinite 0.3s;
+  mask-image: linear-gradient($shine-gradient);
+  -webkit-mask-image: linear-gradient($shine-gradient);
+  mask-size: $shine-mask-size;
+  -webkit-mask-size: $shine-mask-size;
+  animation: shine $shine-duration infinite $shine-delay;
 }
 
 @keyframes shine {
   from {
-    -webkit-mask-position: 150%;
+    mask-position: $shine-from;
+    -webkit-mask-position: $shine-from;
   }
 
   to {
-    -webkit-mask-position: -50%;
+    mask-position: $shine-to;
+    -webkit-mask-position: $shine-to;
   }
 }
