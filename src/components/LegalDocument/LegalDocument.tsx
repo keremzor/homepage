@@ -37,7 +37,10 @@ export function LegalDocument({ content }: { content: LegalContent }) {
   return (
     <article className={`${styles.document} ff-400 fs-14-16 text-accent`}>
       <p className={styles.switcher}>
-        <span lang="tr">Türkçe</span> · <a href="#english">{content.switchToEnglish}</a>
+        Türkçe ·{' '}
+        <a href="#english" lang="en">
+          {content.switchToEnglish}
+        </a>
       </p>
       <Section section={content.tr} />
       <hr />
