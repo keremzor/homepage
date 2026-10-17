@@ -1,0 +1,64 @@
+@use '@/styles/abstracts/functions/px-to-rem' as *;
+@use '@/styles/abstracts/mixins/flex' as *;
+
+.document {
+  width: 100%;
+  max-width: to-rem(720);
+  padding-left: to-rem(16);
+  padding-right: to-rem(16);
+  text-align: left;
+  line-height: 1.6;
+  @include flexbox($direction: column, $gap: 48);
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  hr {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid currentcolor;
+    opacity: 0.2;
+  }
+}
+
+.switcher {
+  opacity: 0.7;
+}
+
+.section {
+  @include flexbox($direction: column, $gap: 16);
+  scroll-margin-top: to-rem(48);
+
+  h1 {
+    line-height: 1.2;
+  }
+
+  h2 {
+    margin-top: to-rem(16);
+    font-size: to-rem(20);
+    line-height: 1.3;
+  }
+
+  h3 {
+    margin-top: to-rem(8);
+    font-size: to-rem(16);
+  }
+
+  ul {
+    padding-left: to-rem(20);
+    list-style: disc;
+    @include flexbox($direction: column, $gap: 8);
+  }
+
+  li {
+    padding-left: to-rem(4);
+  }
+}
