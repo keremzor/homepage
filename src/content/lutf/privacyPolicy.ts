@@ -44,7 +44,7 @@ export const privacyPolicy: LegalContent = {
       },
       {
         type: 'p',
-        text: 'Telefonunun yedekleme özelliği açıksa (iPhone\'da iCloud ya da bilgisayar yedeği, Android\'de Google yedeği), bu bilgiler de yedeğe dahil olabilir. Böylece yeni bir telefona geçtiğinde favorilerin geri gelir. Bu yedekler senin Apple ya da Google hesabında tutulur, bize ulaşmaz.',
+        text: "Telefonunun yedekleme özelliği açıksa (iPhone'da iCloud ya da bilgisayar yedeği, Android'de Google yedeği), bu bilgiler de yedeğe dahil olabilir. Böylece yeni bir telefona geçtiğinde favorilerin geri gelir. Bu yedekler senin Apple ya da Google hesabında tutulur, bize ulaşmaz.",
       },
       {
         type: 'p',
@@ -72,7 +72,7 @@ export const privacyPolicy: LegalContent = {
       },
       {
         type: 'p',
-        text: 'Raporlarda okuduğun ayetler, seçtiğin ruh hâlleri, favorilerin, IP adresin ya da cihazına özel bir kimlik yer almaz; bu yüzden bir rapor kimseye bağlanamaz. Rapor yalnızca bir hata olduğunda gönderilir; internet yoksa telefonunda bekler. Raporlar Avrupa Birliği\'ndeki (Almanya) sunucularda tutulur.',
+        text: "Raporlarda okuduğun ayetler, seçtiğin ruh hâlleri, favorilerin, IP adresin ya da cihazına özel bir kimlik yer almaz; bu yüzden bir rapor kimseye bağlanamaz. Rapor yalnızca bir hata olduğunda gönderilir; internet yoksa telefonunda bekler. Raporlar Avrupa Birliği'ndeki (Almanya) sunucularda tutulur.",
       },
 
       { type: 'h3', text: '4.2 Kullanım istatistikleri (PostHog)' },
@@ -91,7 +91,7 @@ export const privacyPolicy: LegalContent = {
       },
       {
         type: 'p',
-        text: '**Hangi ayetleri okuduğun ya da favorilediğin, destek ödemeleri ve seni tanıtan hiçbir bilgi gönderilmez.** İstatistikler her açılışta yeniden ve rastgele üretilen bir kimlikle gönderilir; telefonuna kalıcı bir kimlik yazılmaz. Böylece iki ayrı açılış birbirine, istatistikler de sana ya da cihazına bağlanamaz. IP adresin saklanmaz ve konumun bulunmaya çalışılmaz. Veriler Avrupa Birliği\'ndeki sunucularda tutulur.',
+        text: "**Hangi ayetleri okuduğun ya da favorilediğin, destek ödemeleri ve seni tanıtan hiçbir bilgi gönderilmez.** İstatistikler her açılışta yeniden ve rastgele üretilen bir kimlikle gönderilir; telefonuna kalıcı bir kimlik yazılmaz. Böylece iki ayrı açılış birbirine, istatistikler de sana ya da cihazına bağlanamaz. IP adresin saklanmaz ve konumun bulunmaya çalışılmaz. Veriler Avrupa Birliği'ndeki sunucularda tutulur.",
       },
       {
         type: 'p',
@@ -111,7 +111,7 @@ export const privacyPolicy: LegalContent = {
       { type: 'h2', text: '5. Verilerin aktarılması' },
       {
         type: 'p',
-        text: 'Anonim hata raporları ve kullanım istatistikleri şu hizmet sağlayıcılarda, Avrupa Birliği\'ndeki sunucularda tutulur:',
+        text: "Anonim hata raporları ve kullanım istatistikleri şu hizmet sağlayıcılarda, Avrupa Birliği'ndeki sunucularda tutulur:",
       },
       {
         type: 'ul',
@@ -158,7 +158,7 @@ export const privacyPolicy: LegalContent = {
           'İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenmek',
           'Yurt içinde ya da yurt dışında aktarıldığı üçüncü kişileri bilmek',
           'Eksik ya da yanlış işlenmişse düzeltilmesini istemek',
-          'KVKK m.7\'deki şartlar çerçevesinde silinmesini ya da yok edilmesini istemek',
+          "KVKK m.7'deki şartlar çerçevesinde silinmesini ya da yok edilmesini istemek",
           'Düzeltme, silme ya da yok etme işlemlerinin, verilerin aktarıldığı üçüncü kişilere bildirilmesini istemek',
           'Münhasıran otomatik sistemlerle analiz edilmesi sonucu aleyhine bir sonuç çıkmasına itiraz etmek',
           'Kanuna aykırı işleme nedeniyle zarara uğramışsan zararın giderilmesini talep etmek',
@@ -176,7 +176,7 @@ export const privacyPolicy: LegalContent = {
       { type: 'h2', text: '10. Değişiklikler' },
       {
         type: 'p',
-        text: 'Bu metni güncellediğimizde sayfanın başındaki tarihi değiştiririz. Önemli değişiklikleri App Store\'daki sürüm notlarında da belirtiriz.',
+        text: "Bu metni güncellediğimizde sayfanın başındaki tarihi değiştiririz. Önemli değişiklikleri App Store'daki sürüm notlarında da belirtiriz.",
       },
 
       { type: 'h2', text: '11. İletişim' },
@@ -201,8 +201,8 @@ export const privacyPolicy: LegalContent = {
       {
         type: 'ul',
         items: [
-          'You don\'t need an account. We never ask for your name, email or phone number.',
-          '**Your favorites, your reading progress and your settings stay on your device (and in your phone\'s own backup).** They are not sent to us.',
+          "You don't need an account. We never ask for your name, email or phone number.",
+          "**Your favorites, your reading progress and your settings stay on your device (and in your phone's own backup).** They are not sent to us.",
           'Crash reports and usage statistics are collected to improve the App. Both are **anonymous**: they carry no lasting identifier and cannot be linked to you or to any device.',
           'The App is free.',
         ],
@@ -211,7 +211,7 @@ export const privacyPolicy: LegalContent = {
       { type: 'h2', text: '3. Data that stays on your device' },
       {
         type: 'p',
-        text: 'The following is stored only in the App\'s storage on your device. We have no access to it:',
+        text: "The following is stored only in the App's storage on your device. We have no access to it:",
       },
       {
         type: 'ul',
@@ -225,7 +225,7 @@ export const privacyPolicy: LegalContent = {
       },
       {
         type: 'p',
-        text: 'If your phone\'s backup is turned on (iCloud or computer backup on iPhone, Google backup on Android), this data may be included in it, so your favorites come back when you move to a new phone. These backups are kept in your own Apple or Google account and never reach us.',
+        text: "If your phone's backup is turned on (iCloud or computer backup on iPhone, Google backup on Android), this data may be included in it, so your favorites come back when you move to a new phone. These backups are kept in your own Apple or Google account and never reach us.",
       },
       {
         type: 'p',
@@ -233,7 +233,7 @@ export const privacyPolicy: LegalContent = {
       },
       {
         type: 'p',
-        text: 'Deleting the App deletes the data on your device. You can manage the copies in your backup from your phone\'s backup settings.',
+        text: "Deleting the App deletes the data on your device. You can manage the copies in your backup from your phone's backup settings.",
       },
 
       { type: 'h2', text: '4. Data we process, why, and on what legal basis' },
@@ -246,7 +246,7 @@ export const privacyPolicy: LegalContent = {
         type: 'ul',
         items: [
           'Technical details of the error',
-          'Device model, operating system, app version and the App\'s language',
+          "Device model, operating system, app version and the App's language",
           'Technical device state that helps explain the error (for example, free memory and storage, screen orientation)',
           'Which screen the error happened on (for example, the reading screen)',
         ],
@@ -286,7 +286,7 @@ export const privacyPolicy: LegalContent = {
       },
       {
         type: 'p',
-        text: 'When you share a verse, the image is passed through your phone\'s share menu to the app you choose. It never reaches us.',
+        text: "When you share a verse, the image is passed through your phone's share menu to the app you choose. It never reaches us.",
       },
 
       { type: 'h2', text: '5. Who we share data with' },
@@ -352,7 +352,7 @@ export const privacyPolicy: LegalContent = {
       },
       {
         type: 'p',
-        text: 'Because the App has no accounts and crash reports and usage statistics are anonymous, we don\'t hold any information that identifies you; so we cannot link that data to you, show it to you, or delete only yours.',
+        text: "Because the App has no accounts and crash reports and usage statistics are anonymous, we don't hold any information that identifies you; so we cannot link that data to you, show it to you, or delete only yours.",
       },
 
       { type: 'h2', text: '10. Changes' },

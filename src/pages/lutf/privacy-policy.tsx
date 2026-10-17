@@ -8,11 +8,17 @@ export default function PrivacyPolicy() {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Lutf — Gizlilik Politikası / Privacy Policy</title>
-        <meta name="description" content="Lutf uygulamasının gizlilik politikası ve KVKK aydınlatma metni. Privacy policy of the Lutf app." />
+        <meta
+          name="description"
+          content="Lutf uygulamasının gizlilik politikası ve KVKK aydınlatma metni. Privacy policy of the Lutf app."
+        />
         <meta name="author" content="Kerem Zor" />
         <meta name="robots" content="noindex, nofollow" />
         <meta property="og:title" content="Lutf — Gizlilik Politikası / Privacy Policy" />
-        <meta property="og:description" content="Lutf uygulamasının gizlilik politikası ve KVKK aydınlatma metni. Privacy policy of the Lutf app." />
+        <meta
+          property="og:description"
+          content="Lutf uygulamasının gizlilik politikası ve KVKK aydınlatma metni. Privacy policy of the Lutf app."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://keremzor.com/lutf/privacy-policy" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
