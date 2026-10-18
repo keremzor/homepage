@@ -6,7 +6,7 @@ export const privacyPolicy: LegalContent = {
     lang: 'tr',
     title: 'Gizlilik Politikası ve KVKK Aydınlatma Metni',
     blocks: [
-      { type: 'p', text: '**Son güncelleme:** 17.10.2026' },
+      { type: 'p', text: '**Son güncelleme:** 18.10.2026' },
       {
         type: 'p',
         text: 'Lutf ("Uygulama"), ruh hâline göre Kur\'an ayetleri gösteren bir mobil uygulamadır. Bu metin, Uygulama\'yı kullanırken hangi verilerin işlendiğini, neden işlendiğini ve haklarını açıklar. 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamındaki aydınlatma metni olarak da geçerlidir.',
@@ -40,6 +40,8 @@ export const privacyPolicy: LegalContent = {
           'Son okuduğun ruh hâli',
           'Ayarların: dil, tema, yazı boyutu, Arapça metnin gösterilip gösterilmemesi, günün ayeti bildiriminin açık olup olmadığı ve saati',
           'Bir kez gösterilen ipuçlarını (ör. "kaydır" ipucu) görüp görmediğin ve "Her gün bir ayet" kartını yanıtlayıp yanıtlamadığın',
+          'Uygulamayı kaç farklı gün kullandığın ve App Store puan penceresinin hangi sürümde istendiği (puanı seyrek ve yalnızca uygulamayı birkaç gün kullanan birine sormak için)',
+          'Paylaştığın son ayet görseli: paylaşım için telefonunun geçici klasöründe tutulur ve bir sonraki paylaşımda silinir',
         ],
       },
       {
@@ -49,6 +51,10 @@ export const privacyPolicy: LegalContent = {
       {
         type: 'p',
         text: 'Günün ayeti bildirimi telefonunda zamanlanır ve telefonunda gösterilir; bunun için hiçbir bilgi bize ya da başka bir hizmete gönderilmez.',
+      },
+      {
+        type: 'p',
+        text: "Puan penceresi Apple'ın kendi penceresidir: verdiğin puan ve yazdığın yorum doğrudan App Store'a gider, uygulama üzerinden bize bir şey gönderilmez.",
       },
       {
         type: 'p',
@@ -187,7 +193,7 @@ export const privacyPolicy: LegalContent = {
     lang: 'en',
     title: 'Privacy Policy',
     blocks: [
-      { type: 'p', text: '**Last updated:** October 17, 2026' },
+      { type: 'p', text: '**Last updated:** October 18, 2026' },
       {
         type: 'p',
         text: 'Lutf ("the App") is a mobile app that shows verses of the Quran based on how you feel. This policy explains what data is processed when you use the App, why it is processed, and what your rights are.',
@@ -221,6 +227,8 @@ export const privacyPolicy: LegalContent = {
           'The mood you read last',
           'Your settings: language, theme, text size, whether Arabic text is shown, and whether the verse of the day notification is on and its time',
           'Whether you have seen one-time hints (such as the "swipe" hint) and answered the "A verse every day" card',
+          'How many different days you have used the App and in which version the App Store rating window was requested (so that a rating is asked for rarely, and only from someone who has used the App on several days)',
+          "The last verse image you shared: it is kept in your phone's temporary folder for sharing and is deleted the next time you share",
         ],
       },
       {
@@ -230,6 +238,10 @@ export const privacyPolicy: LegalContent = {
       {
         type: 'p',
         text: 'The verse of the day notification is scheduled and shown on your phone; no information is sent to us or any other service for it.',
+      },
+      {
+        type: 'p',
+        text: "The rating window is Apple's own: your rating and review go directly to the App Store, and nothing is sent to us through the App.",
       },
       {
         type: 'p',
